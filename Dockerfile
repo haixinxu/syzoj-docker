@@ -3,7 +3,7 @@ FROM debian:stable
 
 RUN apt update &&\
     apt upgrade -y &&\
-    apt install git nodejs curl -y &&\
+    apt install git nodejs curl gnupg gnupg2 -y &&\
     curl -sL https://deb.nodesource.com/setup_10.x | bash - &&\
     git clone https://github.com/syzoj/syzoj &&\
     cd syzoj &&\
